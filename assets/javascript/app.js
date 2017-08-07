@@ -1,49 +1,47 @@
 var panel = $("#quiz-area");
 
-// Question set
+// Populate the set of seven Questions.
 var questions = [{
-  question: "What was the first full length CGI movie?",
-  answers: ["A Bug's Life", "Monsters Inc.", "Toy Story", "The Lion King"],
-  correctAnswer: "Toy Story"
+  question: "Which movie was not directed by Luc Besson?",
+  answers: ["The Professional", "3 Days to Kill", "The Fifth Element", "Atlantis"],
+  correctAnswer: "3 Days to Kill"
 }, {
-  question: "Which of these is NOT a name of one of the Spice Girls?",
-  answers: ["Sporty Spice", "Fred Spice", "Scary Spice", "Posh Spice"],
-  correctAnswer: "Fred Spice"
+  question: "Which of these is NOT a city where the current Los Angeles Clippers have called home?",
+  answers: ["Los Angeles", "Kansas City", "Buffalo", "San Diego"],
+  correctAnswer: "Kansas City"
 }, {
-  question: "Which NBA team won the most titles in the 90s?",
-  answers: ["New York Knicks", "Portland Trailblazers", "Los Angeles Lakers", "Chicago Bulls"],
-  correctAnswer: "Chicago Bulls"
+  question: "Which of these is NOT the name of a Vincent van Gogh painting?",
+  answers: ["Wheat Field", "The Starry Night", "The Potato Eaters", "Sorrow"],
+  correctAnswer: "Wheat Field"
 }, {
-  question: "Which group released the hit song, \"Smells Like Teen Spirit\"?",
-  answers: ["Nirvana", "Backstreet Boys", "The Offspring", "No Doubt"],
-  correctAnswer: "Nirvana"
+  question: "Which group released the hit song, \"Black Hole Sun\"?",
+  answers: ["Nirvana", "Alice in Chains", "Pearl Jam", "Soundgarden"],
+  correctAnswer: "Soundgarden"
 }, {
-  question: "Which popular Disney movie featured the song, \"Circle of Life\"?",
-  answers: ["Aladdin", "Hercules", "Mulan", "The Lion King"],
-  correctAnswer: "The Lion King"
+  question: "Which popular movie featured the catch phrase,\"Have fun storming the castle!\"?",
+  answers: ["The Philadelphia Story", "The Princess Bride", "Forrest Gump", "The Princess Diaries"],
+  correctAnswer: "The Princess Bride"
 }, {
-  question: "Finish this line from the Fresh Prince of Bel-Air theme song: \"I whistled for a cab and when it came near, the license plate said...\"",
-  answers: ["Dice", "Mirror", "Fresh", "Cab"],
-  correctAnswer: "Fresh"
+  question: "The movie \"Airheads\" asks us this timeless question: \"Who would win a fight between Lemmy and God\"?",
+  answers: ["Lemmy", "God", "It would be a draw", "Lemmy IS God!"],
+  correctAnswer: "Lemmy IS God!"
 }, {
-  question: "What was Doug's best friend's name?",
-  answers: ["Skeeter", "Mark", "Zach", "Cody"],
-  correctAnswer: "Skeeter"
-}, {
-  question: "What was the name of the principal at Bayside High in Saved By The Bell?",
-  answers: ["Mr.Zhou", "Mr.Driggers", "Mr.Belding", "Mr.Page"],
-  correctAnswer: "Mr.Belding"
+  question: "According to \"The Hitchhiker's Guide to the Galaxy\", what is the meaning of life?",
+  answers: ["Japanese Game Shows", "42", "Enlightenment", "Ask the Dolphins"],
+  correctAnswer: "42"
 }];
 
 // Variable that will hold the setInterval
 var timer;
 
+// Variable that will hold the game data (answers and time)
 var game = {
 
   correct: 0,
   incorrect: 0,
   counter: 120,
 
+// 
   countdown: function() {
     game.counter--;
     $("#counter-number").html(game.counter);

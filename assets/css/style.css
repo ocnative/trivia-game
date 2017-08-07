@@ -14,7 +14,7 @@ body {
   box-sizing: border-box;
   padding: 5% 0;
   margin: 5% auto;
-  background-color: #fff17a;
+  background-color: yellow;
 }
 
 #sub-wrapper {
@@ -35,7 +35,7 @@ button {
 
 h1 {
   margin-bottom: 50px;
-  font-family: Space-Mono, sans-serif;
+  font-family: Space, sans-serif;
   font-size: 6.5em;
   font-weight: bold;
   color: blue;
@@ -49,16 +49,19 @@ h2 {
 h3 {
   margin-bottom: 10px;
   font-size: 25px;
+  font-weight: bold;
 }
 
 #start {
   margin-top: 10%;
-  background: orange;
+  background: beige;
   border: 2px solid blue;
 }
 
 #quiz-area h2 {
   margin-top: 50px;
+  font-size: 25px;
+  font-weight: bold;  
 }
 
 button:hover {
