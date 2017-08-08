@@ -1,3 +1,11 @@
+// app.js
+// 
+// 
+// 
+//
+  
+
+
 var panel = $("#quiz-area");
 
 // Populate the set of seven Questions.
