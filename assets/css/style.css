@@ -1,13 +1,13 @@
 /*  
 Used as starter for my Trivia Game project. - Bill Roush 8/1/2017
 
-module name: index.html
-created: August 1, 2017 9:05 AM
+Module name: style.css
+Created: August 1, 2017 9:05 AM
 Author: Adapted from solution by Bill Roush
 Revisions:  
 (Bill Roush) (8/1/2017) - Obtained source from class repository 
-(Bill Roush) (8/1/2017) - Changed look of HTML paages. Added my own questions.
-(Bill Roush) (8/1/2017) - Added comments to show I wasn't simply stealing the solution.
+(Bill Roush) (8/1/2017) - Changed look of HTML pages. Added my own questions.
+(Bill Roush) (8/6-10/2017) - Added comments to show I wasn't simply stealing the solution.
 
 */
 
@@ -18,9 +18,10 @@ body {
 
 body {
   text-align: center;
+  /* Set the background to solid black. */
   background-image: url("../images/black.jpg");
 }
-
+/* Set the visual properties of the wrapper div inside index.html. */
 #wrapper {
   width: 960px;
   min-height: 80%;
@@ -29,12 +30,12 @@ body {
   margin: 5% auto;
   background-color: yellow;
 }
-
+/* Set the visual properties of the sub-wrapper div inside index.html. */
 #sub-wrapper {
   position: relative;
   top: 20%;
 }
-
+/* Set the visual properties of the button inside index.html. */
 button {
   display: block;
   width: 400px;
@@ -45,7 +46,7 @@ button {
   background: transparent;
   border: 0;
 }
-
+/* Set the visual properties of the font inside the h1 heading contained within the wrapper div inside index.html. */
 h1 {
   margin-bottom: 50px;
   font-family: Space, sans-serif;
@@ -53,30 +54,30 @@ h1 {
   font-weight: bold;
   color: blue;
 }
-
+/* Set the visual properties of a MYSTERY font inside an h2 heading I don't see called out anywhere inside index.html. */
 h2 {
   margin-bottom: 25px;
   font-size: 35px;
 }
-
+/* Set the visual properties of a MYSTERY font inside an h3 heading I don't see called out anywhere inside index.html. */
 h3 {
   margin-bottom: 10px;
   font-size: 25px;
   font-weight: bold;
 }
-
+/* Set the visual properties of the Start button inside index.html. */
 #start {
   margin-top: 10%;
   background: beige;
   border: 2px solid blue;
 }
-
+/* Set the visual properties of the font inside the h2 heading for the quiz-area div contained within the sub-wrapper div inside index.html. */
 #quiz-area h2 {
   margin-top: 50px;
   font-size: 25px;
   font-weight: bold;  
 }
-
+/* Set the visual properties that are shown when a user hovers over the Start button inside index.html. */
 button:hover {
   background: pink;
   border: 2px solid blue;

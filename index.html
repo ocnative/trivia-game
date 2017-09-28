@@ -1,50 +1,56 @@
 <!--  
 Used as starter for my Trivia Game project. - Bill Roush 8/1/2017
 
-module name: index.html
-created: August 1, 2017 9:05 AM
+Module name: index.html
+Created: August 1, 2017 9:05 AM
 Author: Adapted from solution by Bill Roush
 Revisions:  
 (Bill Roush) (8/1/2017) - Obtained source from class repository 
-(Bill Roush) (8/1/2017) - Changed look of HTML paages. Added my own questions.
-(Bill Roush) (8/1/2017) - Added comments to show I wasn't simply stealing the solution.
+(Bill Roush) (8/1/2017) - Changed look of HTML pages. Added my own questions.
+(Bill Roush) (8/6-10/2017) - Added comments to show I wasn't simply stealing the solution.
 
 -->
+
+<!--  -->
 
 <!DOCTYPE html>
 
 <html lang="en-us">
 
   <head>
-
+    <!-- Sets the Character encoding to UTF-8, which is for Unicode. -->
     <meta charset="UTF-8">
-    <title>Totally Trivial Trivia</title>
+    <title>Bestest Trivia! 'Merica!</title>
 
-    <!-- CSS Reset Sheet -->
+	
+    <!-- Sets a link for the CSS Reset Sheet. -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
 
-    <!-- Our own CSS Sheet -->
+    <!-- Sets a link for our own CSS Sheet. -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- jQuery -->
+    <!-- Invokes the jQuery library from a remote file. -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!-- Google Font -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet" type="text/css"> -->
+    <!-- Invokes the Google Font library from a remote file. Chose my own font.  -->
     <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet" type="text/css">
   </head>
 
   <body>
-
+    <!-- A wrapper div in an HTML document does the same thing as a fence but to a page layout instead of to land. -->
+	<!-- This one fences in the h1 heading. -->
     <div id="wrapper">
       <h1>Bestest Trivia Game Ever!</h1>
+      <!-- This one fences in the "quiz area" containing the Start button. -->
       <div id="sub-wrapper">
         <div id="quiz-area">
-          <button id="start">Start</button>
+        <!-- Create the Start button.-->
+		<button id="start">Start</button>
         </div>
       </div>
     </div>
 
+    <!-- Invokes Javascript from our own Javascript file.  -->
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 
   </body>

@@ -1,8 +1,40 @@
-Things I learned doing the Trivia Game project:
+Things I learned doing the Trivia Game project AND questions about things I would like to try but don't know how:
 
+Things Learned:
+==========================================
 1. How to create comments in:
 	CSS:		/* comment */
 	HTML:		<!-- comment -->
 	Javascript:	// comment
 	
-2. 
+2. The concept of nessting a div inside another div. In this case inside index.html, I see three nested divs:
+   <div id="wrapper">
+      <h1>Bestest Trivia Game Ever!</h1>
+      <div id="sub-wrapper">
+        <div id="quiz-area"> 
+
+   Still not clear on why this is a helpful method.
+
+
+
+Questions that arose during the process:
+==========================================
+1. How to make the background image (stretch?) fill the entire screen regardless of screen resolution?
+2. I couldn't find in the code where the font settings for the Start button's text were located. 
+   Kyle showed me how to find them using the Chrome Dev Tools, but I don't understand why I can't see them in the code.
+3. timer = setInterval(game.countdown, 1000) 
+   "timer" is a variable local to the "start" function, and it is set using the setInterval method and its properties 
+   to create a value of 120 seconds to use as the amount of time a player gets to complete the quiz.
+   Am I saying this correctly? Method and properties?
+4. The "done" function is repetetive. Is there a way to put the questions into an array, and use a for loop to run the        
+   functions $.each($("input[name='question-0']:checked"), function() {
+             if ($(this).val() === questions[0].correctAnswer) {
+             game.correct++;
+             }
+             else {
+             game.incorrect++;
+             }
+             });
+   and use the array index instead of having to run one function per question?
+ 5. 
+ 

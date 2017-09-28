@@ -1,8 +1,13 @@
-// app.js
 // 
-// 
-// 
-//
+// Used as starter for my Trivia Game project. - Bill Roush 8/1/2017
+
+// Module name: app.js
+// Created: August 1, 2017 9:05 AM
+// Author: Adapted from solution by Bill Roush
+// Revisions:  
+// (Bill Roush) (8/1/2017) - Obtained source from class repository 
+// (Bill Roush) (8/1/2017) - Changed look of HTML pages. Added my own questions in this file.
+// (Bill Roush) (8/6-10/2017) - Added comments to show I wasn't simply stealing the solution.
   
 
 
@@ -39,17 +44,20 @@ var questions = [{
   correctAnswer: "42"
 }];
 
-// Variable that will hold the setInterval
+// Variable that will hold the countdown timer value.
 var timer;
 
-// Variable that will hold the game data (answers and time)
+// Variable that will hold the game data: 
+// Correct answers, incorrect answers, and amount of time the player has to complete the quiz.
 var game = {
 
   correct: 0,
   incorrect: 0,
   counter: 120,
 
-// 
+// Function that counts down the time. It decrements the game.counter field (<-- Is "field" the right term?)
+// one second at a time until game.counter = 0. 
+// Once game.counter = 0, the phrase "TIME UP" is logged to the console.
   countdown: function() {
     game.counter--;
     $("#counter-number").html(game.counter);
@@ -59,9 +67,16 @@ var game = {
     }
   },
 
+// 
   start: function() {
-    timer = setInterval(game.countdown, 1000);
 
+    // This code sets the variable "timer" equal to the setInterval method that is available in Javascript.
+	// In this case, it is setting timer = 120 seconds. The value 120 seconds was obtained by using the 
+	// two setInterval properties. The first property is "game.countdown" (set to 120 when declaring the global variable above). 
+	// and the second property is 1000, which tells setInterval that its set to 1000ms, or one second.
+    timer = setInterval(game.countdown, 1000);
+    
+	// This is a Javascript method that allows us to prepend
     $("#sub-wrapper").prepend("<h2>Time Remaining: <span id='counter-number'>120</span> Seconds</h2>");
 
     $("#start").remove();
@@ -78,7 +93,10 @@ var game = {
   },
 
   done: function() {
-
+    //
+	//
+	//
+	//
     $.each($("input[name='question-0']:checked"), function() {
       if ($(this).val() === questions[0].correctAnswer) {
         game.correct++;
