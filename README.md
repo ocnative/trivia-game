@@ -1,2 +1,2 @@
 # trivia-game
-Placeholder. Code in progress.
+Completed August 1st according to GitHub timestamps.
